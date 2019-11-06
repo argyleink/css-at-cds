@@ -1,1 +1,1 @@
-console.info(index_css)
+console.log('CSS FTW!')
