@@ -17,7 +17,7 @@ main {
 }
 
 h1 {
-  font-size: max(var(--fs1), 6vw);
+  font-size: min(var(--fs1), 6vw);
   font-weight: lighter;
   letter-spacing: 0.2em;
   color: var(--brand1);
