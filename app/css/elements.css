@@ -1,0 +1,39 @@
+body {
+  background: var(--brand3);
+  color: var(--darker-grey);
+  font-family: system-ui;
+  display: grid;
+  place-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-block-end: 10vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: max(var(--fs1), 6vw);
+  font-weight: lighter;
+  letter-spacing: 0.2em;
+  color: var(--brand1);
+  text-align: center;
+  margin-block-start: 20vh;
+  margin-block-end: 10vh;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  & > span {
+    font-size: 2em;
+  }
+}
+
+a {
+  color: rebeccapurple;
+  text-decoration: none;
+}

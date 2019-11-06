@@ -1,0 +1,65 @@
+.card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  border-radius: 1rem;
+  border: 1px solid var(--brand2);
+  background: var(--bg1);
+  box-shadow: 0 4rem 6rem calc(var(--fs1) * -1) hsla(var(--brand-hue) var(--brand-saturation) var(--brand-lightness) / 40%);
+
+  & :is(img, video) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  & > header {
+    color: var(--brand1);
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: var(--fs3);
+    font-weight: lighter;
+  }
+
+  & > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-block: 1px solid var(--brand2);
+  }
+
+  & > footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    & > a {
+      display: inline-grid;
+      grid-auto-flow: column;
+      gap: .5rem;
+      align-items: center;
+      background: var(--brand2);
+      color: var(--brand1);
+      padding: .5rem 1.25rem;
+      font-size: var(--fs6);
+      border-radius: 2rem;
+      line-height: 1.5;
+      font-weight: 300;
+      margin-inline-end: .5rem;
+      border: 1px solid transparent;
+      transition: border .3s ease;
+
+      &:hover {
+        border-color: var(--brand1);
+      }
+
+      & > svg {
+        height: 3ex;
+        width: 3ex;
+
+        & > path:last-of-type {
+          stroke: var(--brand1);
+        }
+      }
+    }
+  }
+}
