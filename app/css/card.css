@@ -6,7 +6,7 @@
   background: var(--bg1);
   box-shadow: 0 4rem 6rem calc(var(--fs1) * -1) hsla(var(--brand-hue) var(--brand-saturation) var(--brand-lightness) / 40%);
 
-  & :is(img, video) {
+  & :matches(img, video) {
     width: 100%;
     height: 100%;
     object-fit: contain;
