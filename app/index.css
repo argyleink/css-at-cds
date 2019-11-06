@@ -1,0 +1,55 @@
+/* @import 'css-from-npm'; */
+
+:root {
+  --darkest-grey:   hsl(0,0%,2%);
+  --darker-grey:    hsl(0,0%,5%);
+  --dark-grey:      hsl(0,0%,20%);
+  --grey:           hsl(0,0%,50%);
+  --light-grey:     hsl(0,0%,60%);
+  --lighter-grey:   hsl(0,0%,80%);
+  --lightest-grey:  hsl(0,0%,92%);
+
+  /* https://easings.net */
+  --easing: ease-out-expo;
+}
+
+body {
+  margin: 0;
+  background: white;
+  color: var(--darker-grey);
+  font-family: system-ui;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: lighter;
+  letter-spacing: 0.2em;
+  color: var(--darkest-grey);
+  text-align: center;
+}
+
+dl {
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4rem 6rem -3rem hsla(0 0% 0% / 40%);
+  border: 1px solid hsl(0 0% 95%);
+
+  & > dt {
+    font-size: 1.75rem;
+    font-weight: lighter;
+
+    &:not(:first-of-type) {
+      margin-block-start: 2rem;
+    }
+  }
+
+  & > dd {
+    margin: 0 0 0 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+}
