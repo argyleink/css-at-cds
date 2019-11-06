@@ -11,6 +11,7 @@
     "build:pre:js": "rollup -c --environment NODE_ENV:production",
     "build:pre:css": "postcss app/index.css -o dist/bundle.css",
     "build:post:copy": "cp app/index.html dist/index.html",
+    "build:post:copy-assets": "mkdir dist/assets && cp -r app/assets/* dist/assets/",
     "build": "rm -rf dist && concurrently npm:build:pre:* && concurrently npm:build:post:*",
     "start": "concurrently --kill-others npm:dev:*"
   },
