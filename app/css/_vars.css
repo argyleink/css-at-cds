@@ -13,6 +13,8 @@
   --text1: hsl(var(--brand-hue) 80% 10%);
   --text2: hsl(var(--brand-hue) 10% 20%);
 
+  --shadow1: 0 4rem 6rem calc(var(--fs1) * -1) hsla(var(--brand-hue) var(--brand-saturation) var(--brand-lightness) / 40%);
+
   --fs1: 3rem;
   --fs2: 2.25rem;
   --fs3: 1.75rem;
@@ -33,6 +35,8 @@
 
     --surface1: hsl(var(--brand-hue) 40% 3%);
     --surface2: hsl(var(--brand-hue) 20% 10%);
+
+    --shadow1: 0 4rem 6rem calc(var(--fs1) * -1) hsla(var(--brand-hue) 70% 15% / 60%);
 
     --text1: hsl(var(--brand-hue) 40% 90%);
     --text2: hsl(var(--brand-hue) 10% 80%);

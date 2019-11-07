@@ -4,7 +4,7 @@
   border-radius: 1rem;
   border: 1px solid var(--brand2);
   background: var(--surface2);
-  box-shadow: 0 4rem 6rem calc(var(--fs1) * -1) hsla(var(--brand-hue) var(--brand-saturation) var(--brand-lightness) / 40%);
+  box-shadow: var(--shadow1);
 
   & :matches(img, video) {
     width: 100%;
