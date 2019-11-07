@@ -5,17 +5,15 @@
 
   --brand1: hsl(var(--brand-hue) var(--brand-saturation) var(--brand-lightness));
   --brand2: hsl(var(--brand-hue) var(--brand-saturation) calc(var(--brand-lightness) * 2.25));
-  --brand3: hsl(var(--brand-hue) var(--brand-saturation) calc(var(--brand-lightness) * 2.45));
+  --brand3: hsl(var(--brand-hue) var(--brand-saturation) calc(var(--brand-lightness) * 2));
 
-  --bg9: hsl(0 0% 0%);
-  --bg8: hsl(0 0% 2%);
-  --bg7: hsl(0 0% 5%);
-  --bg6: hsl(0 0% 20%);
-  --bg5: hsl(0 0% 50%);
-  --bg4: hsl(0 0% 70%);
-  --bg3: hsl(0 0% 90%);
-  --bg2: hsl(0 0% 95%);
-  --bg1: hsl(0 0% 100%);
+  --surface1: hsl(var(--brand-hue) 40% 90%);
+  --surface2: hsl(var(--brand-hue) 100% 99%);
+
+  --text1: hsl(var(--brand-hue) 80% 10%);
+  --text2: hsl(var(--brand-hue) 10% 20%);
+
+  --shadow1: 0 4rem 6rem calc(var(--fs1) * -1) hsla(var(--brand-hue) var(--brand-saturation) var(--brand-lightness) / 40%);
 
   --fs1: 3rem;
   --fs2: 2.25rem;
@@ -26,4 +24,21 @@
 
   /* https://easings.net */
   --easing: ease-out-expo;
+
+  @media (prefers-color-scheme: dark) {
+    --brand-lightness: 3%;
+    --brand-saturation: 30%;
+
+    --brand1: hsl(var(--brand-hue) var(--brand-saturation) var(--brand-lightness));
+    --brand2: hsl(var(--brand-hue) var(--brand-saturation) calc(var(--brand-lightness) * 7));
+    --brand3: hsl(var(--brand-hue) var(--brand-saturation) calc(var(--brand-lightness) * 12));
+
+    --surface1: hsl(var(--brand-hue) 40% 3%);
+    --surface2: hsl(var(--brand-hue) 20% 10%);
+
+    --shadow1: 0 4rem 6rem calc(var(--fs1) * -1) hsla(var(--brand-hue) 70% 15% / 60%);
+
+    --text1: hsl(var(--brand-hue) 40% 90%);
+    --text2: hsl(var(--brand-hue) 10% 80%);
+  }
 }
