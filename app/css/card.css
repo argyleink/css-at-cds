@@ -3,7 +3,7 @@
   grid-template-rows: auto 1fr auto;
   border-radius: 1rem;
   border: 1px solid var(--brand2);
-  background: var(--bg1);
+  background: var(--surface2);
   box-shadow: 0 4rem 6rem calc(var(--fs1) * -1) hsla(var(--brand-hue) var(--brand-saturation) var(--brand-lightness) / 40%);
 
   & :matches(img, video) {
@@ -13,7 +13,7 @@
   }
 
   & > header {
-    color: var(--brand1);
+    color: var(--text1);
     padding: 1rem 2rem;
     text-align: center;
     font-size: var(--fs3);
@@ -38,7 +38,7 @@
       gap: .5rem;
       align-items: center;
       background: var(--brand2);
-      color: var(--brand1);
+      color: var(--text1);
       padding: .5rem 1.25rem;
       font-size: var(--fs6);
       border-radius: 2rem;
@@ -47,6 +47,10 @@
       border: 1px solid transparent;
       transition: border .5s ease;
 
+      @media (prefers-color-scheme: dark) {
+        color: white;
+      }
+
       &:hover {
         border-color: var(--brand1);
       }
@@ -54,10 +58,8 @@
       & > svg {
         height: 3ex;
         width: 3ex;
-
-        & > path:last-of-type {
-          stroke: var(--brand1);
-        }
+        --fill: var(--brand3);
+        --stroke: var(--brand1);
       }
     }
   }
