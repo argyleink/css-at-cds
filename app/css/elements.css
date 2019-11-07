@@ -18,7 +18,6 @@ main {
 
 h1 {
   font-size: var(--fs1);
-  font-size: min(var(--fs1), 6vw);
   font-weight: lighter;
   letter-spacing: 0.2em;
   color: var(--text1);
