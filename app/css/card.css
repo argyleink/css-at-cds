@@ -8,9 +8,11 @@
   transition: transform .4s ease, box-shadow .4s ease;
   z-index: 0;
 
-  &:hover {
-    transform: translateY(-.5rem);
-    box-shadow: var(--shadow1-grow);
+  @media (prefers-reduced-motion: no-preference) {
+    &:hover {
+      transform: translateY(-.5rem);
+      box-shadow: var(--shadow1-grow);
+    }
   }
 
   & :matches(img, video) {
