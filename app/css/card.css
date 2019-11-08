@@ -5,6 +5,13 @@
   border: 1px solid var(--brand2);
   background: var(--surface2);
   box-shadow: var(--shadow1);
+  transition: transform .4s ease, box-shadow .4s ease;
+  z-index: 0;
+
+  &:hover {
+    transform: translateY(-.5rem);
+    box-shadow: var(--shadow1-grow);
+  }
 
   & :matches(img, video) {
     width: 100%;
