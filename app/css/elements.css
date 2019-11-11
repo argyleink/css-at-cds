@@ -6,7 +6,6 @@ body {
   place-content: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding-block-end: 10vh;
 }
 
 main {
@@ -31,6 +30,11 @@ h1 {
   & > span {
     font-size: 2em;
   }
+}
+
+h2 {
+  font-size: var(--fs2);
+  font-weight: lighter;
 }
 
 a {

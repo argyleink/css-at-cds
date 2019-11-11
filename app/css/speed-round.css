@@ -1,0 +1,43 @@
+.speed-round {
+  display: grid;
+  place-items: center;
+  background: white;
+  border-radius: 2rem 2rem 0 0;
+  margin-top: 3rem;
+  padding: 5rem 0;
+
+  & > h2 {
+    margin: 0 0 2rem;
+  }
+  
+  & > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1024px;
+
+    & > li {
+      margin: 0;
+      list-style-type: none;
+      list-style-type: "🏃";
+      background: var(--brand2);
+      color: var(--brand1);
+      border-radius: 2rem;
+      margin-left: 1rem;
+      margin-bottom: 2rem;
+
+      &:hover {
+        background: var(--brand3);
+        color: var(--brand1);
+      }
+    }
+  }
+
+  & a {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding: .5rem 1.5rem;
+    display: inline-block;
+    color: inherit;
+  }
+}
