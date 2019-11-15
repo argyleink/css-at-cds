@@ -1,5 +1,5 @@
 ### Missed it? Watch it here!
-https://www.youtube.com/watch?v=-oyeaIirVC0&t=158s
+https://www.youtube.com/watch?v=-oyeaIirVC0
 
 <br>
 
