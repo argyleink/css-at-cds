@@ -21,7 +21,7 @@ h1 {
   letter-spacing: 0.2em;
   color: var(--text1);
   text-align: center;
-  margin-block-start: 20vh;
+  margin-block-start: 10vh;
   margin-block-end: 10vh;
   display: inline-flex;
   align-items: center;
@@ -40,4 +40,11 @@ h2 {
 a {
   color: var(--text1);
   text-decoration: none;
+}
+
+.vid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: 10vh;
 }
