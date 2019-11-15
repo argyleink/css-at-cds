@@ -1,3 +1,9 @@
+### Missed it? Watch it here!
+https://www.youtube.com/watch?v=-oyeaIirVC0&t=158s
+
+<br>
+
+##### Building this repo:
 ### Modern Javascript ›
 [Rollup](https://rollupjs.org) to **bundle**, **treeshake**, **import from NPM or URLs**, and **import CSS**. 
 
