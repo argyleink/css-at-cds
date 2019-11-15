@@ -47,4 +47,21 @@ a {
   align-items: center;
   justify-content: center;
   margin-block-start: 10vh;
+
+  & > iframe {
+    width: 100%;
+    max-width: 720px;
+    height: 35vh;
+  }
+}
+
+.cite {
+  margin-top: 3rem;
+  background: var(--surface1);
+  border-radius: 3rem;
+  padding: 0 2rem;
+
+  & a {
+    color: var(--brand3);
+  }
 }

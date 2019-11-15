@@ -33,7 +33,7 @@
     }
   }
 
-  & a {
+  & > ul a {
     font-size: 1.5rem;
     font-weight: lighter;
     padding: .5rem 1.5rem;
