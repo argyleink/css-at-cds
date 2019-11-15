@@ -1,7 +1,7 @@
 .speed-round {
   display: grid;
   place-items: center;
-  background: white;
+  background: var(--surface2);
   border-radius: 2rem 2rem 0 0;
   margin-top: 3rem;
   padding: 5rem 0;
@@ -21,7 +21,7 @@
       list-style-type: none;
       list-style-type: "🏃";
       background: var(--brand2);
-      color: var(--brand1);
+      color: var(--text2);
       border-radius: 2rem;
       margin-left: 1rem;
       margin-bottom: 2rem;
