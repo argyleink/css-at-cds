@@ -47,6 +47,10 @@ a {
   align-items: center;
   justify-content: center;
   margin-block-start: 10vh;
+  
+  @media (orientation:portrait) {
+    margin-block-start: 0;
+  }
 
   & > iframe {
     width: 100%;
